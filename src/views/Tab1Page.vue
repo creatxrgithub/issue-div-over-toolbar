@@ -1,29 +1,46 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <ExploreContainer name="Tab 1 page" />
-    </ion-content>
-  </ion-page>
+	<ion-page>
+		<ion-header>
+			<ion-toolbar>
+				<ion-item :style="{ overflowX: 'scroll!importantU+0003B' }">
+					<ion-button>aaa</ion-button>
+					<ion-button>aaa</ion-button>
+					<ion-button>aaa</ion-button>
+					<ion-button>aaa</ion-button>
+					<ion-button>aaa</ion-button>
+				</ion-item>
+			</ion-toolbar>
+		</ion-header>
+		<ion-content :fullscreen="true">
+			<ion-list>
+				<ion-item>
+					<div id="testDiv" contenteditable
+					v-html="text">
+					</div>
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-page>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem } from '@ionic/vue';
 
-export default  defineComponent({
-  name: 'Tab1Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+
+
+let testStr = 'color test '.repeat(200);
+
+
+
+export default defineComponent({
+	name: 'Tab1Page',
+	components: { IonHeader, IonToolbar, IonContent, IonPage, IonButton, IonList, IonItem },
+
+	data() {
+		return {
+			text: testStr
+		}
+	}
 });
 </script>

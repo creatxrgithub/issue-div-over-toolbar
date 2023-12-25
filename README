@@ -1,0 +1,15 @@
+It seems that it's issue for ver6.
+
+when click at the middle height of div and middle position of string, the div over the toolbar.
+
+after upgrade to ver7 in project use the command below, it has no longer toolbar problem.
+
+```
+npm install @ionic/core@7 @ionic/vue@7 @ionic/vue-router@7
+``
+
+I am sorry. As before, I only update global version with command:
+```
+npm install -g @ionic/cli
+npm i  ### in project's folder
+```

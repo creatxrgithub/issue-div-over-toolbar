@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'init-ionic-vue-app',
+  appId: 'issue.div_over_toolbar',
+  appName: 'issue-div-over-toolbar',
   webDir: 'dist',
   bundledWebRuntime: false
 };
