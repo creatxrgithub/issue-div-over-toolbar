@@ -37,3 +37,6 @@ but after upgraded, it has other problem:
 </template>
 ```
 with the code above, it has a display problem: the button and toggle cannot keep in a same line.
+
+![ver6](issue_images/toggle_with_button_1.png)
+![ver7](issue_images/toggle_with_button_2.png)
